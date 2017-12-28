@@ -1,0 +1,13 @@
+{
+"companyName": "Rompipapera",
+"productName": "BendinGrass Example",
+"dataUrl": "BIG AF terrain.data.unityweb",
+"asmCodeUrl": "BIG AF terrain.asm.code.unityweb",
+"asmMemoryUrl": "BIG AF terrain.asm.memory.unityweb",
+"asmFrameworkUrl": "BIG AF terrain.asm.framework.unityweb",
+"TOTAL_MEMORY": 360000000,
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
