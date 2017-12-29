@@ -58,10 +58,11 @@ body{
 .column {
     float: left;
 	height: inherit;
+	border-radius: 8px;
 }
 
 .left {
-    width: 25%;
+    width: 20%;
 	height: 100%;
 }
 
@@ -71,11 +72,13 @@ body{
 
 .Content{
 	padding-left: 50px;
+	padding-top: 50px;
+	text-align: middle center;
 }
 
 .Sidebar {
 	/*margin: 0 15px 0 15px;*/
-	
+	padding-top: 5px;
 	background-color: #424242;
 }
 
