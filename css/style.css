@@ -110,32 +110,45 @@ body{
     -o-transition: opacity,background-color,margin-left .4s ease-in;
 	}
 
-.Sidebar a{
-	text-decoration: none;
+a{
+	
 	font-size: 14px;
 }
 
+.box {
+	font-size: 13px;
+	margin: 8px;
+	margin-bottom: 16px;
+	padding: 6px;
+	border-radius: 8px;
+	background-color: #55555566;
+	width: 85%;
+}
+
+.Sidebar a{
+	text-decoration: none;
+}
 /* unvisited link */
-.Sidebar a:link {
+a:link {
     color: #8BE61F;
 }
 
 /* visited link */
-.Sidebar a:visited {
+a:visited {
     color: #7AD50E;
 	}
 
 /* mouse over link */
-.Sidebar a:hover {
+a:hover {
     color: #AFDF72;
 }
 
 /* selected link */
-.Sidebar a:active {
+a:active {
     color: #CEBA61;
 }
 
-.Sidebar a:-webkit-any-link
+a:-webkit-any-link
 {
 	color: "#8BE61F";
 }
