@@ -2,7 +2,7 @@ html
 {
 	background: #333333;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 24px;
+	font-size: 26px;
 	
 }
 
@@ -21,7 +21,7 @@ li.Attivo {
 li {
     margin-bottom:  5px;
     border-radius: 5px;
-    padding: 6px;
+    padding: 15px;
 	padding-left: 15px;
 	list-style-type: none;
 	-webkit-text-stroke: -1px black;
@@ -36,8 +36,9 @@ li {
 .fur
 {
 	float: right;
-	height: 1.4em;
+	height: 1.7em;
 	width: 50%;
+	
 	background-color: transparent;
 	
 	background-blend-mode: multiply;
