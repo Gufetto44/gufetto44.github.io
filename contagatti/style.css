@@ -14,6 +14,8 @@ li.Disattivo {
 
 li.Attivo {
     background: #9cdc74;
+	
+	margin-left: 35px;
 }
 
 li {
@@ -23,10 +25,28 @@ li {
 	padding-left: 15px;
 	list-style-type: none;
 	-webkit-text-stroke: -1px black;
-	transition: background  .4s ease-in;
-    -moz-transition: background .4s ease-in;
-    -webkit-transition: background .4s ease-in;
-    -o-transition: background .4s ease-in;
+	transition: background, margin-left  .4s ease-in;
+    -moz-transition: background, margin-left .4s ease-in;
+    -webkit-transition: background, margin-left .4s ease-in;
+    -o-transition: background, margin-left .4s ease-in;
+	
+	background-blend-mode: multiply;
+}
+
+.fur
+{
+	float: right;
+	height: 1.4em;
+	width: 50%;
+	background-color: transparent;
+	
+	background-blend-mode: multiply;
+	border-radius: 5px;
+}
+
+.Attivo .fur
+{
+	opacity: 0.25;
 }
 
 li:hover {
