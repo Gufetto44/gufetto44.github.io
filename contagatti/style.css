@@ -21,13 +21,13 @@ div
 
 li.Disattivo {
     background: #FF3442;
-	color: #DDDDDD;
+	
 	
 }
 
 li.Attivo {
     background: #9cdc74;
-	
+	color: #222222;
 	margin-left: 35px;
 }
 
@@ -37,7 +37,6 @@ li {
     padding: 20px;
 	padding-left: 15px;
 	list-style-type: none;
-	-webkit-text-stroke: .1px black;
 	transition: background, margin-left  .1s ease-in;
     -moz-transition: background, margin-left .1s ease-in;
     -webkit-transition: background, margin-left .1s ease-in;
@@ -73,9 +72,7 @@ li {
 	opacity: 0.25;
 }
 
-li:hover {
-    background: #ceca46;
-}
+
 
 h1
 {
