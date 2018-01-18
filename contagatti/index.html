@@ -15,7 +15,7 @@
 var names = ["Aniello","Tigrina","Nana", "Mucco", "Bianchina", "Pepino", "Pepa", "Milka", "Tigro", "Topo", "Nero", "Rosso", "Siames", "Collara", "Topo II", "Ciccio", "Scambiagatto"];
 
 var state = [];
-Refresh();
+Init();
 
 
 function clicka(index)
@@ -28,7 +28,26 @@ function clicka(index)
   {
   	state[index] = 1;
   }
-  Refresh();
+  SetRow(index);
+}
+
+function SetRow(id)
+{
+ var cls;
+if (state[index]==1)
+  {
+    state[index] = 0;
+	cls = "Disattivo";
+  }
+  else
+  {
+  	state[index] = 1;
+	cls = "Attivo";
+  }
+  var name = names[id];
+ 
+	document.getElementById(name).className = "MyClass";
+
 }
 
 function Reset()
@@ -39,20 +58,13 @@ function Reset()
  	}
 }
 
-function Refresh()
+function Init()
   {
 document.getElementById("lista").innerHTML = "";
     var i = 0;
     for(i=0;i<names.length;i++)
     {
-      if (state[i]==1)
-      {
-        document.getElementById("lista").innerHTML += "<li class=\"Attivo\" onclick=\"clicka(" + i + ")\">" + names[i] + "<image class='fur' src=\"img\\" +names[i].toLowerCase()+ ".png\""+"</li>";
-      }
-      else 
-      {
-        document.getElementById("lista").innerHTML += "<li class=\"Disattivo\" onclick=\"clicka(" + i + ")\">" + names[i] + "<image class='fur' src=\"img\\" + names[i].toLowerCase()+ ".png\""+"</li>"; 
-      }
+       document.getElementById("lista").innerHTML += "<li id=\"" + names[i] + "\" class=\"Disattivo\" onclick=\"clicka(" + i + ")\">" + names[i] + "<image class='fur' src=\"img\\" + names[i].toLowerCase()+ ".png\""+"</li>"; 
     }
   }
  
