@@ -1,0 +1,40 @@
+html
+{
+	background: #333333;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	
+}
+
+li.Disattivo {
+    background: #FF3442;
+	color: #DDDDDD;
+	
+}
+
+li.Attivo {
+    background: #9cdc74;
+}
+
+li {
+    margin-bottom:  5px;
+    border-radius: 5px;
+    padding: 6px;
+	padding-left: 15px;
+	list-style-type: none;
+	-webkit-text-stroke: -1px black;
+	transition: background  .4s ease-in;
+    -moz-transition: background .4s ease-in;
+    -webkit-transition: background .4s ease-in;
+    -o-transition: background .4s ease-in;
+}
+
+li:hover {
+    background: #ceca46;
+}
+
+h1
+{
+	color:#DDDDDD;
+	text-align: center;
+}
