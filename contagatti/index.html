@@ -34,19 +34,16 @@ function clicka(index)
 function SetRow(id)
 {
  var cls;
-if (state[index]==1)
+if (state[id]==1)
   {
-    state[index] = 0;
-	cls = "Disattivo";
+	cls = "Attivo";
   }
   else
   {
-  	state[index] = 1;
-	cls = "Attivo";
+	cls = "Disattivo";
   }
   var name = names[id];
- 
-	document.getElementById(name).className = "MyClass";
+	document.getElementById(name).className = cls;
 
 }
 

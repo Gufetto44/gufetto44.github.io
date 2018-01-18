@@ -25,10 +25,10 @@ li {
 	padding-left: 15px;
 	list-style-type: none;
 	-webkit-text-stroke: -1px black;
-	transition: background, margin-left  .4s ease-in;
-    -moz-transition: background, margin-left .4s ease-in;
-    -webkit-transition: background, margin-left .4s ease-in;
-    -o-transition: background, margin-left .4s ease-in;
+	transition: background, margin-left  .2s ease-in;
+    -moz-transition: background, margin-left .2s ease-in;
+    -webkit-transition: background, margin-left .2s ease-in;
+    -o-transition: background, margin-left .2s ease-in;
 	
 	background-blend-mode: multiply;
 }
@@ -46,6 +46,10 @@ li {
 
 .Attivo .fur
 {
+	transition: opacity .2s ease-in;
+    -moz-transition: opacity .2s ease-in;
+    -webkit-transition: opacity .2s ease-in;
+    -o-transition: opacity .2s ease-in;
 	opacity: 0.25;
 }
 
