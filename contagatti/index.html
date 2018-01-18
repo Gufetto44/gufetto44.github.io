@@ -47,11 +47,11 @@ document.getElementById("lista").innerHTML = "";
     {
       if (state[i]==1)
       {
-        document.getElementById("lista").innerHTML += "<li class=\"Attivo\" onclick=\"clicka(" + i + ")\">" + names[i] + "<image class='fur' src=\"img\\" + names[i]+ ".png\""+"</li>";
+        document.getElementById("lista").innerHTML += "<li class=\"Attivo\" onclick=\"clicka(" + i + ")\">" + names[i] + "<image class='fur' src=\"img\\" +names[i].toLowerCase()+ ".png\""+"</li>";
       }
       else 
       {
-        document.getElementById("lista").innerHTML += "<li class=\"Disattivo\" onclick=\"clicka(" + i + ")\">" + names[i] + "<image class='fur' src=\"img\\" + names[i]+ ".png\""+"</li>"; 
+        document.getElementById("lista").innerHTML += "<li class=\"Disattivo\" onclick=\"clicka(" + i + ")\">" + names[i] + "<image class='fur' src=\"img\\" + names[i].toLowerCase()+ ".png\""+"</li>"; 
       }
     }
   }
