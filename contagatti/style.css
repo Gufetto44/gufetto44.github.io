@@ -42,6 +42,12 @@ li {
 	
 	background-blend-mode: multiply;
 	border-radius: 5px;
+	opacity: 1.0;
+	
+	transition: opacity .2s ease-in;
+    -moz-transition: opacity .2s ease-in;
+    -webkit-transition: opacity .2s ease-in;
+    -o-transition: opacity .2s ease-in;
 }
 
 .Attivo .fur
