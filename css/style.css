@@ -23,6 +23,17 @@
 outline: none;
 }
 
+div{
+ -webkit-box-sizing: border-box; 
+ -moz-box-sizing: border-box;    
+ box-sizing: border-box;      
+}
+
+*::selection
+{
+	background: #8BE61F88;
+}
+
 html
 {
 	height: 100%;
@@ -132,9 +143,98 @@ a{
 	width: 85%;
 }
 
+.separator {
+	font-size: 13px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	
+	padding: 2px;
+	border-radius: 2px;
+	background-color: #55555533;
+	width: 100%;
+}
+
+.date {
+	font-size: 8px;
+	color: #8BE61F45;
+	margin-left: 6px;
+}
+
+.date::selection {
+	color: lightgrey;
+}
+
 .Sidebar a{
 	text-decoration: none;
 }
+
+/* Foldout */
+
+
+.foldout {
+	font-size: 13px;
+	margin: 8px;
+	margin-bottom: 0px;
+	border: none;
+	color: inherit;
+	text-align: center;
+	border-radius: 8px;
+	background-color: #55555566;
+	width: 85%;
+	cursor: pointer;
+	transition: border-bottom-left-radius 0.2s ease-out, border-bottom-right-radius 0.2s ease-out;
+}
+.active{
+	background-color: #8BE61F44;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	transition: border-bottom-left-radius 0.2s ease-out, border-bottom-right-radius 0.2s ease-out;
+}
+.foldout:hover {
+	background-color: #8BE61F88;
+
+}
+
+.foldout:after {
+  content: '\25bc'; /* Unicode character for "plus" sign (+) */
+  
+  color: #77777788;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\25b2"; /* Unicode character for "minus" sign (-) */
+}
+
+.new:after {
+	content: "New"; /* Unicode character for "plus" sign (+) */
+	border-radius: 6px;
+	font-size: 12px;
+	background-color: #8BE61F88;
+	color: lightgrey;
+	float: left;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-right:6px;
+	margin-left: 5px;
+}
+
+.foldoutContent {
+	margin: 8px;
+	margin-top: -1px;
+	background-color: inherit;
+	max-height: 0px;
+	overflow: hidden;
+	
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	width: 85%;
+	transition: max-height 0.2s ease-out;
+	padding-left: 16px;
+	
+}
+
 /* unvisited link */
 a:link {
     color: #8BE61F;

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111096880-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-111096880-2');
+	</script>
+
+	
+	
+    <title>BendinGrass Changelog</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<h2><center> BendinGrass ChangeLog </center></h2>
+		
+		<!-- Version 2.1 -->
+		
+		<h3> v2.1: <div class="date">01/04/2019</div></h3>
+		<ul>
+			<li> Billboards
+			<div class="box">
+				Added support for billboard grass, as requested by users.
+			</div>
+			
+			<li> Editor
+			<div class="box">
+				Added a new tab in the volume inspector, in case you need to change how the volume is displayed inside the editor.<br>You can change color or disable single features.
+			</div>
+			
+			<li> Trees
+			<div class="box">
+				Benders can now interact with trees!
+				<br>
+				<button class="foldout">Notes on trees</button>
+				<div class="foldoutContent">
+					<p>I decided to ship tree support with this update, even though I'm not really happy with the end result.<br>
+					It will probably be improved in future updates. <br>
+					You can tweak or disable tree interactions in the inspector under the <i>Graphics Parameters</i> section.</p>
+				</div>
+			</div>
+			
+			<li> Minor changes
+			<div class="box">
+				Several very minor changes related to the inspector or code.
+			</div>
+			
+			<li> Bugfixes
+			<div class="box">
+				Multiple bug fixes on this update, with the most important ones being: 
+				<div class="box">
+					Fixed a problem that could cause a volume map glitch on moving volumes under certain circumstances.
+				</div>
+				
+				<div class="box">
+					Fixed a bug that would cause the volume map gizmos to be drawn incorrectly in the editor.
+				</div>
+				
+				<div class="box">
+					Fixed a possible cause of shader compiling error on some configurations.
+				</div>
+				
+				
+				<div class="box">
+					Included a fix in case of incorrect depth rendering of the grass. <br>
+					<button class="foldout">Notes on depth fix</button>
+					<div class="foldoutContent">
+					<p>Use it if you have problems with rendering (for example on camera effects). To use it, you have to go in your project settings, under the Graphics tab, then set <b><i>BendinGrass/BendinGrass-DepthNormalsTexture</i></b> as replacement for "Depth Normals".</p>
+					</div>
+				</div>
+			</div>
+			
+		</ul>
+		
+		<div class="separator"> </div>
+		
+		<!-- Version 2.0 -->
+		
+		<h3> v2.0: <div class="date">30/06/2018</div> </h3>
+			<UL>
+			<LI> 
+			Space Partitioning
+			<div class="box">
+			You can now split your big volume in multiple smaller ones, for a massive performance boost
+			</div>
+			
+			<LI> Dynamic Volume Simulation
+			<div class="box">
+			Only compute the relevant part of your map, saving much computation power! <br> You can now move your simulation volume around and only simulate a small part of your level
+			</div>
+			
+			
+			<LI> Terrain mode 
+			<div class="box">
+			If your level uses one terrain you can now use its heightmap for better space-efficiency
+			</div>
+			
+			<LI> Benders inheritance
+			<div class="box">
+			It can be useful sometime to chain grass benders and inherit parameters. You can now do that!
+			</div>
+			
+			<LI> More compatible
+			<div class="box">
+			Even tho BendinGrass is meant to be used on high end platforms, it now works on a wider range of devices. 
+			I got rid of all the DX11 level functions and also designed my own rendering system to replace the Unity's custom render textures.
+			It works on Shader Level 3.0+ platforms: <br>
+			<ul>
+				<li>DX9
+				<li>DX10
+				<li>OpenGLES 2
+				<li>OpenGLES 3
+			</ul>
+			So you can now use it on WebGL or mobile.
+			</div>
+			<LI> More capable
+			<div class="box">	
+			
+			No more hard limit on the number of benders. <br>
+			The renderer can now split the bendmap rendering into multiple draw calls if necessary, to avoid some GPU memory limit.
+			
+			</div>
+			</UL>
+		
+		<script>
+	var coll = document.getElementsByClassName("foldout");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight){
+		  content.style.maxHeight = null;
+		} else {
+		  content.style.maxHeight = content.scrollHeight + "px";
+		} 
+	  });
+	}
+	</script>
+		
+	</body>
+</html>
