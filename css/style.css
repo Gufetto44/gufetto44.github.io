@@ -288,3 +288,13 @@ a:-webkit-any-link
 ::-webkit-scrollbar-thumb:hover {
   background: #8BE61FAA;
 }
+
+.SmallImage img
+{
+	max-width:300px;
+	max-height:300px;
+	margin:10px;
+	
+	border-radius: 10px;
+	vertical-align: middle;
+}
