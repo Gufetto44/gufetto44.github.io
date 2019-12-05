@@ -21,7 +21,7 @@
 	<body>
 		<h2><center> About me </center></h2>
 		Hi, my name is Cosimo, I am
-23 years old, from Italy. I like science, gaming, music and of course
+25 years old, from Italy. I like science, gaming, music and of course
 programming.
 I'm currently an Unity C#
 and Shader developer. I'm currently planning to release some packages
@@ -78,43 +78,70 @@ More about my work:
 	</div>
 	<LI>I worked on <a href="https://github.com/manhunterita/Habitat">Habitat</a>, for <a href="http://jams.gamejolt.io/indievaultgamejam">IndieVault gamejam 2016</a>. I did the controls/characters movements, and some graphics.
 	<LI>I then started some
-	other unity projects as I was experimenting and learning new stuff,
+	other Unity projects as I was experimenting and learning new stuff,
 	planning to release some of them on the asset store too: (in no
-	particular order)
+	particular order)<br>
 	<UL>
+		
+		
+		<LI><A HREF="https://forum.unity.com/threads/bendingrass-simple-interactable-grass.508211">BendinGrass</A>
+		 - <i><a href="http://u3d.as/XEf">Asset Store</a></i>
+		  - <i><a href="BigTerrain/BigTerrain.html">WebGL</a></i>
+		<div class="box">I liked shaders, so I wanted to try Compute Shaders for grass
+		touch bend. While I was learning about compute shaders, I noticed
+		that it could have been a good package to release too. I later had to
+		drop compute shaders for compatibility, and use vertex/fragment shaders
+		instead. I worked on this a lot, it now provides its own rendering
+		system, specialized in packing volumetric data on a texture 2D and
+		supporting hundreds of objects thanks to the GPU computing.
+		<br>
+		<br>
+		BendinGrass is currently my biggest asset published on the store.
+		</div>
+		
+		<LI><a href="BubbleR/BubbleR.html">BubbleR</a>
+		 - <i><a href="http://u3d.as/1wBx">Asset Store</a>
+		<div class="box">Shader that I created for fun and to learn. It is an high quality, parametric bubble shader with a lot of customizable parameters, useful to achieve multiple different results with little effort, as you don't need to paint textures. Supports color noise, vertex animation, thin-film effect. It's also compatible with reflection probes and particles systems.</div>
+		
+		<LI><a href="https://youtu.be/8uvSRL502sk">HoloGrid</a>
+		 - <i><a href="http://u3d.as/1Dz6">Asset Store</a>
+		<div class="box">Another straightforward shader that I needed to render some grids and holograms. Decided to publish it on the Asset Store later on. Supports flickering, spatial noise, scan-line effect, view angle fading, triplanar mapping (very useful especially for grids, either world or local space).</div>
+		
+		<LI><A HREF="SnoopBoard/SnoopBoard.7z">SnoopBoard</a>
+		<div class="box">
+		This one is just a for-fun project that I created while experimenting with compute shaders. It is a very basic drawing software with the essential drawing functions (draw&amp;erase, undo&amp;redo, generate a Snoop
+		Dogg, etc.).
+		</div>
+		
+		<LI><A HREF="Caravan/Caravan_demo.html">Caravan Card Game</a>
+		<div class="box">
+		Yet another for-fun project, this time is a card game: Caravan!<br>
+		Based on the popular card game inside Fallout:New Vegas (with some very minor rules changes). 
+		</div>
+		
 		<LI><a href="https://youtu.be/XnvMAdjLxck">AudioSync</a><div class="box">A plugin
 		useful for various effects based on audio signals, for example
 		automatically animating your character as he/she speaks. It
 		performs an FFT on the audioclip samples and provides frequency
 		bands and other data, whit a customizable output function, which
 		you can then use for whatever you want.</div>
+		
 		<LI><A HREF="https://youtu.be/gHITXo_nsoo">FloWater</A>
 		<div class="box">Started it as a simple water shader while I was learning shader
 		coding, with just refraction and 1 direction flow. After some time
 		I decided to improve it, adding dynamic waterflow and more
 		customizable colors. Eventually I will reflections and other stuff
 		too.</div>
-		<LI><A HREF="https://forum.unity.com/threads/bendingrass-simple-interactable-grass.508211">BendinGrass</A>
-		<div class="box">I liked shaders, so I wanted to try Compute Shaders for grass
-		touch bend. While I was learning about compute shaders, I noticed
-		that it could have been a good package to release too. I had to
-		drop compute shaders for compatibility, and use normal shaders
-		instead. I worked on this a lot, it now provides its own rendering
-		system, specialized in packing volumetric data on a texture 2D and
-		supporting hundreds of objects thanks to the GPU computing.</div>
+		
 		<LI>Other minor things I
 		was working on: 
 		
 		<UL>
 			<LI>A triplanar shader
 			pack, with some variants, like heightmap blending, bumpmap, splat
-			maps, ecc.
+			maps, etc.
 			<LI>A sign creator.
 		</UL>
-		<LI>Also did this one for
-		fun: <A HREF="SnoopBoard/SnoopBoard.7z">SnoopBoard</a>. A very simple drawing software with the essential
-		drawing functions (draw&amp;erase, undo&amp;redo, generate a Snoop
-		Dogg, etc.) using compute shaders.
 		
 	</UL>
 </UL>

@@ -71,6 +71,7 @@ body{
     float: left;
 	height: inherit;
 	border-radius: 8px;
+	
 }
 
 .left {
@@ -97,6 +98,13 @@ body{
 li 
 {
 	margin-bottom:8px;
+}
+
+.scrollable
+{
+	overflow: auto;
+overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .Sidebar list {
@@ -208,7 +216,7 @@ a{
 }
 
 .new:after {
-	content: "New"; /* Unicode character for "plus" sign (+) */
+	content: "New";
 	border-radius: 6px;
 	font-size: 12px;
 	background-color: #8BE61F88;
@@ -258,4 +266,25 @@ a:active {
 a:-webkit-any-link
 {
 	color: "#8BE61F";
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #33333399;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8BE61F88;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8BE61FAA;
 }

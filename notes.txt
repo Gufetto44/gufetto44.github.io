@@ -1,0 +1,11 @@
+Let's say your level looks like this: there are obviosuly areas that do not need to update, cause they are empty.
+At the moment BendinGrass does not know it, so it will update the whole map
+every time. Every update it has to check if every cell in the map is affected by a bender.
+It's a lot of wasted calculations!
+
+But we can do something about this. We can tell to split our volume in smaller ones, and do the calculations only on the characters inside each volume.
+For example, we can divide our volume in 3x3 sub-volumes, and it will look like this:
+
+image
+
+I won't do the math on this, because it's very variable, but I would say that it's on average 80%+ more efficient.
