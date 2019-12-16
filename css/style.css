@@ -180,6 +180,7 @@ a{
 
 
 .foldout {
+	display:block;
 	font-size: 13px;
 	margin: 8px;
 	margin-bottom: 0px;

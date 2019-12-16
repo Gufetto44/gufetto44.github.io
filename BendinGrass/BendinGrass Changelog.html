@@ -24,22 +24,33 @@
 		
 		<!-- Version 2.2 -->
 		
-		<h3> v2.2: <div class="date">[Unreleased]</div></h3>
+		<h3> v2.2: <div class="date">[Unreleased, pending review]</div></h3>
 		<ul>
-			<li> Compatibility
+			<li> Conversion tool
 			<div class="box">
-				Now BendinGrass won't use RenderTextures with the <i>RandomWrite</i> flag enabled, which means better compatibility on WebGL.
+				BendinGrass now include a TerrainData conversion tool! You can use it to convert terrains if you are using an Unity version that does not support shader overriding on grass (Unity 2019.2.x).
 			</div>
 			
-			<li> Bugfixes
+			<li> Universal Rendering Pipeline
 			<div class="box">
-				
-				<div class="box">
-					Fixed grass being rendered completely flat for some users, after exiting play mode in the editor.
-				</div>
-				
-				
+				Included a shader for URP! Use the Terrain Conversion tool to set the correct shaders, if needed.
 			</div>
+			
+			<li> Grass inflate
+			<div class="box">
+				Added a checkbox to prevent grass from "inflating".
+			</div>
+			
+			<li> Flat color
+			<div class="box">
+				You can now chose a different color (and alpha) for bent grass!
+			</div>
+			
+			<li> Compatibility
+			<div class="box">
+				You can now disable BendinGrass on specific graphic APIs.
+			</div>
+			
 		</ul>
 		
 		<div class="separator"> </div>
