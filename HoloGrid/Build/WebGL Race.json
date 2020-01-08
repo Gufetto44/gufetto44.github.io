@@ -5,6 +5,7 @@
 "dataUrl": "WebGL Race.data.unityweb",
 "wasmCodeUrl": "WebGL Race.wasm.code.unityweb",
 "wasmFrameworkUrl": "WebGL Race.wasm.framework.unityweb",
+"wasmSymbolsUrl": "WebGL Race.wasm.symbols.unityweb",
 "graphicsAPI": ["WebGL 2.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
 "splashScreenStyle": "Dark",
