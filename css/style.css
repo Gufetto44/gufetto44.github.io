@@ -146,6 +146,7 @@ a{
 	margin-bottom: 16px;
 	
 	padding: 6px;
+	padding-left: 10px;
 	border-radius: 8px;
 	background-color: #55555566;
 	width: 85%;
@@ -182,6 +183,7 @@ a{
 .foldout {
 	display:block;
 	font-size: 13px;
+	padding: 4px;
 	margin: 8px;
 	margin-bottom: 0px;
 	border: none;
