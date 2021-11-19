@@ -301,3 +301,13 @@ a:-webkit-any-link
 	border-radius: 10px;
 	vertical-align: middle;
 }
+
+.MediumImage img
+{
+	max-width:450px;
+	max-height:450px;
+	margin:10px;
+	
+	border-radius: 10px;
+	vertical-align: middle;
+}
