@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 	<body>
-		<li>Talos map</li>
+		<li>Talos maps</li>
 		<div class="box">
 			<div class="MediumImage">
 				<image src="HoA/Talos/Talos_day_1.jpg"/>
@@ -48,7 +48,7 @@
 			</div>
 			</div>
 
-			<li>Ascalon map</li>
+			<li>Ascalon maps</li>
 		<div class="box">
 			<div class="MediumImage">
 				<image src="HoA/Ascalon/Ascalon_1.jpg"/>
@@ -65,21 +65,5 @@
 
 			</div>
 			</div>
-	</body>
-	<script>
-		var coll = document.getElementsByClassName("foldout");
-		var i;
-	
-		for (i = 0; i < coll.length; i++) {
-			coll[i].addEventListener("click", function() {
-			this.classList.toggle("active");
-			var content = this.nextElementSibling;
-			if (content.style.maxHeight){
-				content.style.maxHeight = null;
-			} else {
-				content.style.maxHeight = content.scrollHeight + "px";
-			} 
-			});
-		}
-		</script>
+		</body>
 </html>
