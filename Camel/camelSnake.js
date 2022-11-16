@@ -330,20 +330,27 @@ function generateFood()
 
 function inputs()
 {
-    const LEFT_KEY = 37;
-    const RIGHT_KEY = 39;
+    const W_KEY = 87;
     const UP_KEY = 38;
-    const DOWN_KEY = 40;
+
+    const LEFT_KEY = 37;
+    const A_KEY = 65;
     
-    let keyPressed = event.keyCode;
+    const RIGHT_KEY = 39;
+    const D_KEY = 68;
 
-    if (keyPressed === LEFT_KEY) GoLeft(); 
+    const DOWN_KEY = 40;
+    const S_KEY = 83;
 
-    if (keyPressed === UP_KEY) GoUp();
+    let k = event.keyCode;
 
-    if (keyPressed === RIGHT_KEY) GoRight();
+    if (k === LEFT_KEY || k === A_KEY) GoLeft(); 
 
-    if (keyPressed === DOWN_KEY) GoDown();
+    if (k === UP_KEY || k === W_KEY) GoUp();
+
+    if (k === RIGHT_KEY || k === D_KEY) GoRight();
+
+    if (k === DOWN_KEY || k === S_KEY) GoDown();
 }
 
 function GoLeft()

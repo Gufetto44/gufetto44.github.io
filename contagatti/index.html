@@ -24,7 +24,7 @@ Conteggio : <a id="contatore"></a>
 
 
 <script>
-var names = ["Bianchina","Mucco","Milka","Rosso","Siames","Topo", "Pepino", "Pepa", "Topo II", "Tigrina", "Aniello","Nana",   "Tigro", "Collara", "Ciccio", "Scambiagatto",  "Nero"];
+var names = ["Bianchina","Mucco","Rosso","Topo", "Pepino", "Pepa", "Topo II", "Tigrina", "Aniello","Nana", "Tigro", "Collara", "Ciccio", "Scambiagatto",  "Nero", "Topo rossa", "Mimmo", "Mimma"];
 
 var state = [];
 
@@ -109,9 +109,15 @@ document.getElementById("lista").innerHTML = "";
     var i = 0;
     for(i=0;i<names.length;i++)
     {
-		if (names[i]=="Topo")
+		var name = names[i];
+		if (name === "Topo")
 			suggerimento = i;
-       document.getElementById("lista").innerHTML += "<li id=\"" + names[i] + "\" class=\"Disattivo\" onclick=\"clicka(" + i + ")\">" + names[i] + "<image class='fur' src=\"img\\" + names[i].toLowerCase()+ ".png\""+"</li>"; 
+		
+		var imgHtml = "";
+
+		imgHtml = "<image class='fur' src=\"img\\" + name.toLowerCase() + ".png\" onerror=\"this.src='img/default.png'\"></image>";
+		
+    	document.getElementById("lista").innerHTML += "<li id=\"" + name + "\" class=\"Disattivo\" onclick=\"clicka(" + i + ")\">" + name + imgHtml +"</li>"; 
     }
 	SetCounter();
   }
