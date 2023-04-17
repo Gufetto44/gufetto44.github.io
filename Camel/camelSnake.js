@@ -1,6 +1,6 @@
 
 // config params
-const nextPageURL = "http://www.w3schools.com";
+const nextPageURL = "../index.html";
 const maxFood = 10;
 const cellSize = 10;
 const tickRate = 10;
