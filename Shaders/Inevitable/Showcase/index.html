@@ -8,23 +8,33 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+    <center>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas">
+      </canvas>
       <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
+        <!-- <div id="unity-logo"></div> -->
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
+        <div id="AIM-logo">
+          <img src="TemplateData/AIM_logo.png" style="max-height: 100%; width: auto;">
+        </div>
         <div id="unity-fullscreen-button"></div>
+        <div id="Inevitable-logo"><img src="TemplateData/Inevitable_logo.png" style="max-height: 100%; width: auto;"></img></div>
+        <div id="description">
+          
+          Accompanied by an AI companion, a young boy must contend with matters of the hearth as he explores the surreal landscapes of his mind.
+          
+        </div>
       </div>
+      
     </div>
-    <div id="description">
-      A coming of age tale told entirely within the mind.<br>
-      Trapped within a coma, a 12-year-old boy named Teddy enlists the help of an AI companion to regain consciousness before misinformed doctors convince his father to pull the plug.
-    </div>
+    </center>
+    
     
     <script>
       var container = document.querySelector("#unity-container");
@@ -85,6 +95,7 @@
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
+        container.style.width = "960px";
         canvas.style.width = "960px";
         canvas.style.height = "600px";
       }
