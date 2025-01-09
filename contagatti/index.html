@@ -22,11 +22,11 @@ Your browser does not support the audio element.
   </audio>
 <h1>Contagatti</h1>
 
-<div id="con">
+<div id="con" >
 
 Conteggio : <a id="contatore"></a>
 <h2 id="topo"></h2>
-<div id="lista">
+<div id="lista" class="background">
 
 </div>
 
@@ -110,14 +110,14 @@ function SetCounter()
 	document.getElementById("contatore").innerHTML = count + "/" + max;
 	
 	
-	var message;
+	/*var message;
 	
 	if (state[suggerimento]==1)
 		message = "Hai trovato topo";
 	else
 		message = "Dov'è topo?";
 		
-	document.getElementById("topo").innerHTML = message;
+	document.getElementById("topo").innerHTML = message;*/
 }
 
 function Reset()
@@ -140,9 +140,9 @@ document.getElementById("lista").innerHTML = "";
 		
 		var imgHtml = "";
 
-		imgHtml = "<image class='fur' src=\"img\\" + name.toLowerCase() + ".png\" onerror=\"this.src='img/default.png'\"></image>";
+		imgHtml = "<image class='fur' src=\"img\\" + name.toLowerCase() + ".jpg\" onerror=\"this.src='img/default.jpg'\"></image>";
 		
-    	document.getElementById("lista").innerHTML += "<li id=\"" + name + "\" class=\"Disattivo\" onclick=\"clicka(" + i + ")\">" + name + imgHtml +"</li>"; 
+    	document.getElementById("lista").innerHTML += "<li id=\"" + name + "\" class=\"Disattivo\" onclick=\"clicka(" + i + ")\">" + "<text class='nome'>" + name + "</text>" + imgHtml +"</li>"; 
     }
 	SetCounter();
   }

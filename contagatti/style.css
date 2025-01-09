@@ -6,7 +6,7 @@ html
 	color:#DDDDDD;
 }
 
-div
+.background
 {
 	padding : 25px;
 	border-radius: 5px;
@@ -28,14 +28,18 @@ li.Disattivo {
 li.Attivo {
     background: #9cdc74;
 	color: #222222;
-	margin-left: 35px;
+	margin-left: 15px;
 }
 
 li {
+	position:relative;
+
     margin-bottom:  5px;
     border-radius: 5px;
-    padding: 20px;
+    /*padding: 5px;
 	padding-left: 15px;
+	*/
+	height: 40px;
 	list-style-type: none;
 	transition: background, margin-left  .1s ease-in;
     -moz-transition: background, margin-left .1s ease-in;
@@ -47,9 +51,10 @@ li {
 
 .fur
 {
-	float: right;
-	height: 1.7em;
-	width: 50%;
+	position:relative;
+	float: left;
+	height: 90%;
+	width: 6px;
 	
 	background-color: transparent;
 	
@@ -57,10 +62,16 @@ li {
 	border-radius: 5px;
 	opacity: 1.0;
 	
+	z-index: -1;
+	margin-left: -5px;
+	padding-top: 2px;
+	padding-right: 13px;
+
 	transition: opacity .1s ease-in;
     -moz-transition: opacity .1s ease-in;
     -webkit-transition: opacity .1s ease-in;
     -o-transition: opacity .1s ease-in;
+	
 }
 
 .Attivo .fur
@@ -72,7 +83,11 @@ li {
 	opacity: 0.25;
 }
 
-
+.nome
+{
+	text-align: left;
+	align-self: center;
+}
 
 h1
 {
